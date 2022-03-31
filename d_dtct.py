@@ -9,6 +9,7 @@ import math
 
 # 变量
 srcPath = "./defect_image/shadow/"  # 原始路径
+srcPath2 = "./defect_image/oily/"  # 原始路径
 dstPath = "C:/Users/98137/Desktop/res/"  # 存储路径
 index = 1
 type = ["oily","shadow"]

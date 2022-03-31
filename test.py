@@ -68,7 +68,7 @@ for root, dirs, files in os.walk(path):
         # img = cv2.imread(path)
         imgHSV = cv2.cvtColor(img,cv2.COLOR_BGR2HSV)
         # 鼠标点击响应事件
-        #鼠标点选hsv图像，保存相应位置hsv参数
+        #鼠标点选hsv图像，保存相应位置hsv参数，根据hsv参数提取颜色检测油污的同时，保证shadow不被检测出
         def getposHsv(event, x, y, flags, param):
             if event == cv2.EVENT_LBUTTONDOWN:
                 print("HSV is", imgHSV[y, x])
